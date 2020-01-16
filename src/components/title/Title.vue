@@ -9,7 +9,7 @@
 
   @Component
   export default class Title extends Vue {
-    @Prop() private textTitle!: string
+    @Prop() private textTitle!: String
   }
 </script>
 

@@ -1,10 +1,10 @@
-# Scaffolding
+# Dashboards
 
 ## Stack & Components
 
 This project is using:
 
-Vue.js, TypeScript, Jest, Element-ui
+Vue.js, TypeScript, Jest, Element-ui, Chart.js
 
 ## Project setup
 
@@ -41,8 +41,3 @@ npm run lint
 ```
 npm run test:unit
 ```
-
-## TODO
-
-- Add Sidebar with links
-- Each component should work on it's on
