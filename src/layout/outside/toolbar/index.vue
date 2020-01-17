@@ -19,7 +19,8 @@
 
 <style lang="scss" scoped>
   #toolbar {
-    background: lightblue;
+    background: #45b395;
+    opacity: 0.2;
     height: 56px;
     display: inline-flex;
     flex-wrap: nowrap;

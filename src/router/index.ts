@@ -11,9 +11,9 @@ const routes = [
     component: () => import('@/views/Home.vue')
   },
   {
-    path: '/dashboards',
-    name: 'dashboards',
-    component: () => import('@/views/Dashboards.vue')
+    path: '/computers',
+    name: 'computers',
+    component: () => import('@/views/dashboards/Computers.vue')
   },
   {
     path: '/not-found',

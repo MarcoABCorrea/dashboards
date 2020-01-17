@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Title text-title="Home Page" />
+    <Title text-title="Dashboards Home Page" />
   </div>
 </template>
 

@@ -1,5 +1,12 @@
 <template>
-  <el-menu id="sidebar-menu" :collapse="isCollapse">
+  <el-menu
+    id="sidebar-menu"
+    :collapse="isCollapse"
+    background-color="#545c64"
+    active-text-color="#89ff30"
+    text-color="#fff"
+    :default-active="'2'"
+  >
     <el-menu-item index="1" @click="isCollapse = !isCollapse">
       <img src="@/assets/logo.svg" alt="" />
     </el-menu-item>
@@ -9,10 +16,10 @@
         <span slot="title">Home</span>
       </el-menu-item>
     </router-link>
-    <router-link :to="'/dashboards'">
+    <router-link :to="'/computers'">
       <el-menu-item index="3">
         <i class="el-icon-s-data"></i>
-        <span slot="title">Dashboards</span>
+        <span slot="title">Computers</span>
       </el-menu-item>
     </router-link>
   </el-menu>

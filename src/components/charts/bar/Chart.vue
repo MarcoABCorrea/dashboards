@@ -1,12 +1,12 @@
 <script lang="ts">
   import { Vue, Component, Prop, Mixins } from 'vue-property-decorator'
-  import { Doughnut } from 'vue-chartjs'
+  import { Bar } from 'vue-chartjs'
 
   @Component
-  export default class Chart extends Mixins(Doughnut) {
-    @Prop({ type: Array, default: ['black', 'blue', 'red'] }) colors!: String[]
-    @Prop({ type: Array, default: ['X', 'Y', 'Z'] }) labels!: String[]
-    @Prop({ type: Array, default: [10, 10, 10] }) values!: String[]
+  export default class Chart extends Mixins(Bar) {
+    @Prop() colors!: String[]
+    @Prop() labels!: String[]
+    @Prop() values!: String[]
 
     mounted(): void {
       let options = {
@@ -22,7 +22,7 @@
         }
       }
 
-      let chartdata = {
+      let chartdata: any = {
         datasets: [
           {
             data: this.values,
@@ -32,7 +32,6 @@
         ],
         labels: this.labels
       }
-
       this.renderChart(chartdata, options)
     }
   }

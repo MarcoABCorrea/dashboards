@@ -27,7 +27,9 @@ import {
   Scrollbar,
   Icon,
   RadioButton,
-  MenuItemGroup
+  MenuItemGroup,
+  Col,
+  Row
 } from 'element-ui'
 
 locale.use(en)
@@ -54,6 +56,8 @@ Vue.use(Dialog)
 Vue.use(Icon)
 Vue.use(RadioButton)
 Vue.use(MenuItemGroup)
+Vue.use(Col)
+Vue.use(Row)
 
 Vue.prototype.$loading = Loading.service
 Vue.prototype.$msgbox = MessageBox
