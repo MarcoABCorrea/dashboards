@@ -6,7 +6,7 @@
 
 <script lang="ts">
   import { Vue, Component, Prop } from 'vue-property-decorator'
-  import IChartData from '@/components/charts/IChartData'
+  import IBarChartData from './IBarChartData'
   import Chart from './Chart.vue'
 
   @Component({
@@ -15,7 +15,7 @@
     }
   })
   export default class BarChart extends Vue {
-    @Prop() private chartData!: IChartData
+    @Prop() private chartData!: IBarChartData
 
     data() {
       return { ...this.chartData }
